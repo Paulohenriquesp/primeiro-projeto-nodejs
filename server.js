@@ -55,6 +55,6 @@ server.get("/video", function (req, res) {
   return res.render("video", { item: video });
 });
 
-server.listen(5000, function () {
+server.listen(process.env.PORT || 5000, function () {
   console.log(`Server is running`);
 });
